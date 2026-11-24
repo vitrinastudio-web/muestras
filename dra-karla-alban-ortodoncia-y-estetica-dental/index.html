@@ -150,6 +150,12 @@ input:focus{outline:0;border-color:var(--c)}
 .dia.sel,.hora:hover,.dia:hover{border-color:var(--c);background:color-mix(in srgb,var(--c) 8%,#fff)}
 .hora.no{opacity:.35;text-decoration:line-through;pointer-events:none}
 .paso2{font-size:13px;color:var(--mut);margin:0 0 8px}
+.m img,.av img{width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block;background:#fff}
+.gal{padding-top:0}
+.galg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.galg img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);display:block;background:var(--soft)}
+.gnote{font-size:13px;color:var(--mut);margin-top:12px}
+@media(max-width:760px){.galg{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:24px -20px 0;padding:0 20px}.galg img{flex:none;width:72%;scroll-snap-align:center}}
 .sms{margin:18px auto 0;max-width:320px;background:var(--soft);border-radius:18px;padding:14px;text-align:left;font-size:14px}
 .sms small{display:block;color:var(--mut);font-size:12px;margin-bottom:6px}
 .nota{font-size:12px;color:var(--mut);margin-top:14px}
@@ -195,7 +201,7 @@ footer{padding:30px 0 40px;color:var(--mut);font-size:14px;text-align:center}
 <div class="muestra"><b>Muestra</b> preparada por Vitrina Studio para Dra. Karla Albán, Ortodoncia y Estética Dental. No es la web oficial.</div>
 
 <header id="hd"><div class="nav">
-  <a href="#" class="logo"><span class="m">KA</span><span>Dra. Karla Albán, Ortodoncia y Estética Dental</span></a>
+  <a href="#" class="logo"><span class="m"><img src="img/logo.jpg" alt=""></span><span>Dra. Karla Albán, Ortodoncia y Estética Dental</span></a>
   <div class="navr">
     <a class="navtel" href="tel:0969572449">096 957 2449</a>
     <a class="btn p sm" href="#cotizar">Reservar cita</a>
@@ -219,7 +225,7 @@ footer{padding:30px 0 40px;color:var(--mut);font-size:14px;text-align:center}
       <div class="phone">
         <div class="screen">
           <div class="notch"></div>
-          <div class="chead"><div class="av">KA</div><div><b>Dra. Karla Albán, Ortodoncia y Estética Dental</b><small>● En línea</small></div></div>
+          <div class="chead"><div class="av"><img src="img/logo.jpg" alt=""></div><div><b>Dra. Karla Albán, Ortodoncia y Estética Dental</b><small>● En línea</small></div></div>
           <div class="msgs" id="msgs">
             <div class="b l">Hola, quisiera una cita para ortodoncia e invisalign. ¿Tienen espacio esta semana?</div>
             <div class="b r" id="ty"><span class="typing"><i></i><i></i><i></i></span></div>
@@ -244,6 +250,7 @@ footer{padding:30px 0 40px;color:var(--mut);font-size:14px;text-align:center}
   <div class="svc"><div class="card rv d1"><div class="n">01</div><div class="ico">😁</div><h3>Ortodoncia e Invisalign</h3><p>Brackets o alineadores, para niños y adultos.</p></div><div class="card rv d2"><div class="n">02</div><div class="ico">🔦</div><h3>Láser</h3><p>Tratamientos más cómodos y con menos molestias.</p></div><div class="card rv d3"><div class="n">03</div><div class="ico">🖥️</div><h3>Escáner 3D y RX</h3><p>Diagnóstico preciso, sin moldes incómodos.</p></div></div>
 </div></section>
 
+<section class="gal"><div class="wrap"><div class="eyebrow rv">Casos reales</div><h2 class="rv d1">Antes y después en la consulta</h2><div class="galg"><img src="img/f1.jpg" alt="" loading="lazy"><img src="img/f2.jpg" alt="" loading="lazy"><img src="img/f3.jpg" alt="" loading="lazy"></div><p class="gnote">Fotos de su Instagram @dralbandelsalto</p></div></section>
 <section class="speed"><div class="wrap sgrid">
   <div>
     <div class="eyebrow rv" style="color:#fff;opacity:.7">Por qué importa</div>
